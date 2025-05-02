@@ -3,6 +3,7 @@ const productId = param.get("productId");
 const URL = productId ? "https://striveschool-api.herokuapp.com/api/product/" + productId : "https://striveschool-api.herokuapp.com/api/product/";
 const method = productId ? "PUT" : "POST";
 const delBtn = document.getElementById("delete-button");
+const uploadBtn = document.getElementById("upload-button");
 
 const backOfficeForm = document.getElementById("backoffice-form");
 
@@ -29,7 +30,7 @@ window.onload = function () {
 
   if (productId) {
     subtitle.innerText = "— Edit product";
-
+    uploadBtn.innerText = "Edit";
     fetch(URL, {
       method: method,
       headers: {
