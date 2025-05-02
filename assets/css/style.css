@@ -5,3 +5,13 @@
 .flo-primary-color {
   color: #ee9c97 !important;
 }
+.flo-primary-bg-color {
+  background-color: #ee9c97 !important;
+  color: black;
+  border: none !important;
+}
+.flo-primary-bg-color:hover {
+  background-color: #eeb7b4 !important;
+  color: black;
+  border: none !important;
+}
