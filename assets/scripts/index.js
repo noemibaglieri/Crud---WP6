@@ -56,12 +56,12 @@ const getAllProducts = () => {
         cardBtnArea.className = "d-flex justify-content-between";
 
         const exploreBtn = document.createElement("a");
-        exploreBtn.className = "btn btn-primary";
+        exploreBtn.className = "btn btn-primary flo-primary-bg-color";
         exploreBtn.innerText = "Explore";
         exploreBtn.href = "./product-details.html?productId=" + item._id;
 
         const editBtn = document.createElement("a");
-        editBtn.className = "btn btn-danger";
+        editBtn.className = "btn btn-warning";
         editBtn.innerHTML = `<i class="bi bi-pencil-square"></i>`;
         editBtn.href = "#";
 

@@ -31,6 +31,9 @@ window.onload = function () {
   if (productId) {
     subtitle.innerText = "— Edit product";
     uploadBtn.innerText = "Edit";
+    uploadBtn.classList.remove("btn-success");
+    uploadBtn.classList.add("btn-warning");
+
     fetch(URL, {
       method: method,
       headers: {
