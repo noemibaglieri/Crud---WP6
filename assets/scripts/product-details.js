@@ -15,21 +15,27 @@ window.onload = function () {
 
       const productImage = document.createElement("img");
       productImage.src = product.imageUrl;
+      productImage.className = "rounded-3";
 
       const productTitle = document.createElement("h1");
       productTitle.innerText = product.name;
 
       const productBrand = document.createElement("p");
       productBrand.innerText = product.brand;
+      productBrand.className = "flo-primary-color fw-bold d-inline-block";
+
+      const productSpan = document.createElement("span");
+      productSpan.innerText = "by ";
 
       const productDesc = document.createElement("p");
       productDesc.innerText = product.description;
 
       const productPrice = document.createElement("p");
-      productPrice.innerText = product.price;
+      productPrice.innerText = product.price + "€";
 
       productDetailsContainer.appendChild(productImage);
       productDetailsContainer.appendChild(productTitle);
+      productDetailsContainer.appendChild(productSpan);
       productDetailsContainer.appendChild(productBrand);
       productDetailsContainer.appendChild(productDesc);
       productDetailsContainer.appendChild(productPrice);
