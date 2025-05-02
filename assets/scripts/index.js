@@ -76,6 +76,10 @@ const getAllProducts = () => {
         itemCardBody.appendChild(cardBtnArea);
         cardBtnArea.appendChild(exploreBtn);
         cardBtnArea.appendChild(editBtn);
+
+        editBtn.onclick = function () {
+          window.location.assign("./backoffice.html?productId=" + item._id);
+        };
       });
     });
 };
