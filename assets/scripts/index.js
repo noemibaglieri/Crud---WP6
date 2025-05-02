@@ -58,7 +58,7 @@ const getAllProducts = () => {
         const exploreBtn = document.createElement("a");
         exploreBtn.className = "btn btn-primary";
         exploreBtn.innerText = "Explore";
-        exploreBtn.href = "#";
+        exploreBtn.href = "./product-details.html?productId=" + item._id;
 
         const editBtn = document.createElement("a");
         editBtn.className = "btn btn-danger";
