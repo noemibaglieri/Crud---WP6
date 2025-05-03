@@ -14,3 +14,42 @@
   background-color: #eeb7b4 !important;
   border: none !important;
 }
+
+.hero-img {
+  max-width: 350px;
+}
+
+.hero-position {
+  position: absolute;
+  top: -30px;
+  right: -100px;
+}
+
+.card-min-height {
+  min-height: 25rem;
+}
+
+hr {
+  width: 50%;
+}
+
+footer {
+  background-color: #ee9c97 !important;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #352f2e;
+}

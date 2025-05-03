@@ -25,7 +25,7 @@ delBtn.onclick = function () {
   });
 };
 
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", function () {
   const subtitle = document.getElementById("subtitle");
 
   if (productId) {
@@ -62,7 +62,7 @@ window.onload = function () {
   } else {
     subtitle.innerText = "— Upload new product";
   }
-};
+});
 
 backOfficeForm.onsubmit = function (e) {
   e.preventDefault();

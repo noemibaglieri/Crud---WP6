@@ -34,7 +34,7 @@ const getAllProducts = () => {
         itemImage.alt = item.description;
 
         const itemCardBody = document.createElement("div");
-        itemCardBody.className = "card-body";
+        itemCardBody.className = "card-body card-min-height d-flex flex-column";
 
         const itemTitle = document.createElement("h5");
         itemTitle.className = "card-title";
@@ -49,7 +49,7 @@ const getAllProducts = () => {
         itemBrand.innerText = "Brand: " + item.brand;
 
         const itemDesc = document.createElement("p");
-        itemDesc.className = "card-text";
+        itemDesc.className = "card-text flex-grow-1";
         itemDesc.innerText = item.description;
 
         const cardBtnArea = document.createElement("div");
