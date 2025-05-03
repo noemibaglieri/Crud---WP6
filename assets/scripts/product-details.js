@@ -13,29 +13,25 @@ window.onload = function () {
     .then((product) => {
       const productDetailsContainer = document.getElementById("product-details");
 
-      const productImage = document.createElement("img");
+      const productImage = document.getElementById("product-image");
       productImage.src = product.imageUrl;
       productImage.className = "rounded-3";
+      productImage.style.width = "100%";
 
-      const productTitle = document.createElement("h1");
+      const productTitle = document.getElementById("product-title");
       productTitle.innerText = product.name;
 
-      const productBrand = document.createElement("p");
+      const productBrand = document.getElementById("product-brand");
       productBrand.innerText = product.brand;
       productBrand.className = "flo-primary-color fw-bold d-inline-block";
 
-      const productSpan = document.createElement("span");
-      productSpan.innerText = "by ";
-
-      const productDesc = document.createElement("p");
+      const productDesc = document.getElementById("product-description");
       productDesc.innerText = product.description;
 
-      const productPrice = document.createElement("p");
+      const productPrice = document.getElementById("product-price");
       productPrice.innerText = product.price + "€";
 
-      productDetailsContainer.appendChild(productImage);
       productDetailsContainer.appendChild(productTitle);
-      productDetailsContainer.appendChild(productSpan);
       productDetailsContainer.appendChild(productBrand);
       productDetailsContainer.appendChild(productDesc);
       productDetailsContainer.appendChild(productPrice);

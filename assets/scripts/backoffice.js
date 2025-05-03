@@ -29,8 +29,8 @@ window.addEventListener("DOMContentLoaded", function () {
   const subtitle = document.getElementById("subtitle");
 
   if (productId) {
-    subtitle.innerText = "— Edit product";
-    uploadBtn.innerText = "Edit";
+    subtitle.innerText = "Editing";
+    uploadBtn.innerText = "Confirm Edit";
     uploadBtn.classList.remove("btn-success");
     uploadBtn.classList.add("btn-warning");
 
@@ -56,11 +56,14 @@ window.addEventListener("DOMContentLoaded", function () {
         document.getElementById("item-image").value = product.imageUrl;
         document.getElementById("item-price").value = product.price;
 
+        subtitle.classList.add("bg-warning");
         delBtn.classList.remove("d-none");
       })
       .catch((error) => console.log(error));
   } else {
-    subtitle.innerText = "— Upload new product";
+    subtitle.innerText = "Creating";
+    subtitle.classList.add("bg-success");
+    subtitle.classList.add("text-white");
   }
 });
 

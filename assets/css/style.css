@@ -33,10 +33,6 @@ hr {
   width: 50%;
 }
 
-footer {
-  background-color: #ee9c97 !important;
-}
-
 ul {
   padding: 0;
 }
@@ -46,10 +42,25 @@ li {
 }
 
 footer a {
-  color: white;
+  color: #000000;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #352f2e;
+  color: #575352;
+  text-decoration: underline wavy;
+  text-underline-offset: 4px;
+  text-decoration-color: #ee9c97;
+}
+
+.nav-link:hover:not(.active) {
+  text-decoration: underline wavy;
+  text-underline-offset: 4px;
+  text-decoration-color: #ee9c97;
+}
+
+.cute-underline {
+  text-decoration: underline wavy;
+  text-underline-offset: 8px;
+  text-decoration-color: #ee9c97;
 }
